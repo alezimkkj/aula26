@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const mostrarMensagem = () => {
+            console.log("Bem-vindo ao estudo de funções em JavaScript!");
+        };
+
+        mostrarMensagem();
+
+        const somaSimples = () => {
+            let a = 4;
+            let b = 6;
+            console.log(a + b);
+        };
+
+        somaSimples();
+
+        const imprimirNome = () => {
+            nome = "Alessandro";
+            console.log(nome);
+        }
+
+        imprimirNome();
+
+        const quadrado = (num) => {
+            return num * num;
+        }
+
+        console.log(quadrado(5));
+
+        const converterParaCelsius = (fahrenheit) => (fahrenheit - 32) * 5/9;
+        console.log(converterParaCelsius(170));
+
+        const concatenaPalavras = (p1, p2) => p1 + " " + p2;
+        console.log(concatenaPalavras("Bom", "Dia"));
+
+        const calcularMedia = (n1, n2, n3) => (n1 + n2 + n3) / 3;
+        console.log(calcularMedia(9, 8, 10));
+
+        const desconto = (valor, percentual) => valor - (valor * (percentual/100))
+        console.log(desconto(100, 10));
+
+        const saudacaoPersonalizada = (nome) => {
+            console.log(`Olá ${nome}! Seja bem-vindo.`);
+        };
+        saudacaoPersonalizada("Ale");
+
+        const multiplicar = (n1, n2) => n1 * n2;
+        console.log(multiplicar(5, 7));
+
+        const dividir = (n1, n2) => n1 / n2;
+        console.log(dividir(10, 2));
+
+        const dobro = num => num * 2;
+        console.log(dobro(5));
+
+        const ehPar = num => num % 2 == 0;
+        console.log(ehPar(2));
+
+        
+    </script>
+</body>
+
+</html>

@@ -65,16 +65,25 @@
         const ehPar = num => num % 2 == 0;
         console.log(ehPar(2));
 
-        const calculadora = () => {
-            const soma = (n1, n2) => n1 + n2;
-            const subtrair = (n1, n2) => n1 - n2;
+        const calculadora = (n1, n2) => {
+            const soma = () => n1 + n2;
+            const subtrair = () => n1 - n2;     
 
-           console.log(soma(2, 7));
-           console.log(subtrair(9, 7));       
-        }
+            console.log(soma());
+            console.log(subtrair());          
+        };
 
-        calculadora();
-    </script>
+        calculadora(7, 2);
+
+        const operacoesAvancadas = (n1, n2) => {
+            const multiplicacao = () => n1 * n2;
+            const potencia = () => Math.pow(n1, n2);
+
+            return { "multiplicacao": multiplicacao(), "potencia": potencia() }  
+        };
+
+        console.log(operacoesAvancadas(9, 7));
+    </script> 
 </body>
 
 </html>
